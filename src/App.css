@@ -133,7 +133,6 @@ body {
 }
 
 .list li {
-  margin-right: 625px;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -152,6 +151,7 @@ body {
   transition: all 300ms;
   text-align: center;
   font-size: 12px;
+  display: inline-block;
   width: 100px;
 }
 .status1 {

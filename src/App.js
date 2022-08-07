@@ -100,7 +100,7 @@ function App() {
   }, [selectedData, search, todos]);
 
   const deleteItem = (index) => {
-    const confirmed = window.confirm("test2");
+    const confirmed = window.confirm("Are you sure you want to delete?");
     if (confirmed) {
       const newTodos = [...todos];
       newTodos.splice(index, 1);
@@ -176,7 +176,7 @@ function App() {
         {list.map((todo, index) => (
           <li key={"list_" + index}>
             <span>{todo.name}</span>
-            <div style={{ textAlign: "center", display: "flex" }}>
+            <div style={{ textAlign: "center" }}>
               <strong
                 className={
                   todo.status === "Urgent"
