@@ -100,7 +100,7 @@ function App() {
   }, [selectedData, search, todos]);
 
   const deleteItem = (index) => {
-    const confirmed = window.confirm("test");
+    const confirmed = window.confirm("test2");
     if (confirmed) {
       const newTodos = [...todos];
       newTodos.splice(index, 1);
