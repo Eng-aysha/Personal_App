@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+body {
+  background: white;
+  margin: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  margin-top: 80px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.App h4 {
+  margin-top: 80px;
+  font-size: 20px;
+  margin-left: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background: none;
+  display: flex;
+  flex-direction: row;
+  outline: none;
+  justify-content: space-between;
+}
+
+.header input {
+  width: 1000px;
+  height: 40px;
+  background: none;
+  margin: 20px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.header select {
+  width: 165px;
+  height: 40px;
+  margin: 20px;
+  outline: none;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.header button {
+  width: 75px;
+  height: 40px;
+  margin: 20px;
+  background-color: #1473e6;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.od_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: 20px;
+  color: #6d6d6d;
+  position: relative;
+}
+
+.od_title {
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 100;
+  box-sizing: inherit;
+  margin-bottom: 0px;
+}
+
+.od_tit {
+  margin-right: 250px;
+  font-size: 15px;
+  font-weight: 100;
+  box-sizing: inherit;
+  margin-bottom: 0px;
+}
+.opn {
+  height: 70px;
+  background: none;
+  margin: 20px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #f0f5f5;
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;
+}
+
+.opn input {
+  width: 1000px;
+  height: 40px;
+  background: white;
+  padding: 0px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+}
+.opn select {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.list {
+  border: 1px solid #ddd;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  list-style: none;
+  position: relative;
+}
+
+.list li {
+  margin-right: 625px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list li * {
+  flex: 1;
+}
+.list li strong {
+  font-weight: 500;
+  color: #fff;
+  padding: 3px 0 3px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 300ms;
+  text-align: center;
+  font-size: 12px;
+  width: 100px;
+}
+.status1 {
+  background: #ff1a75;
+  color: #ddd;
+}
+.status2 {
+  background: #f2b90d;
+  color: #fff;
+}
+.status3 {
+  background: #1473e6;
+  color: #fff;
+}
+.alert {
+  background: #f00;
+  color: #fff;
+}
+.alertİnput {
+  border: 1px solid rgb(238, 85, 85) !important;
+}
+
+.list li button {
+  font-weight: 400;
+  color: #ddd;
+  background: #f00;
+  padding: 0 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 300ms;
+  border-color: white;
+}
+.list li button:hover {
+  background: rgba(171, 15, 15, 0.333);
+}
+.tli {
+  color: #6d6d6d;
+  list-style: none;
+  height: 40px;
+  margin: 20px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #e0ebeb;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
 }
