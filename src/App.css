@@ -145,26 +145,27 @@ body {
 .list li strong {
   font-weight: 500;
   color: #fff;
-  padding: 3px 0 3px 0;
+
   cursor: pointer;
   border-radius: 3px;
   transition: all 300ms;
   text-align: center;
   font-size: 12px;
-  display: inline-block;
-  width: 100px;
 }
 .status1 {
   background: #ff1a75;
   color: #ddd;
+  padding: 7px 7px 7px 7px;
 }
 .status2 {
   background: #f2b90d;
   color: #fff;
+  padding: 6px 6px 6px 6px;
 }
 .status3 {
   background: #1473e6;
   color: #fff;
+  padding: 7px 9px 7px 9px;
 }
 .alert {
   background: #f00;
